@@ -49,7 +49,7 @@ public class AboutBox {
                 .setTitle("About " + callingActivity.getString(R.string.app_name))
                 .setCancelable(true)
                 .setIcon(R.drawable.icon)
-                .setPositiveButton("OK", null)
+                .setPositiveButton( R.string.postiveButton, null)
                 .setView(about)
                 .show(); //Builder method returns allow for method chaining
     }
