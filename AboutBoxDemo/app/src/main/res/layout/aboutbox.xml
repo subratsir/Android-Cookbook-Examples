@@ -3,14 +3,18 @@
     android:id="@+id/aboutView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <LinearLayout android:id="@+id/aboutLayout"
+
+    <LinearLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
         android:padding="5dp">
-        <TextView android:id="@+id/aboutText"
+
+        <TextView
+            android:id="@+id/aboutText"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:textColor="#888"/>
+            android:textColor="#888" />
     </LinearLayout>
 </ScrollView>

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AboutBoxDemo.iml" filepath="$PROJECT_DIR$/AboutBoxDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AboutBoxDemo-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AboutBoxDemo-app.iml" group="AboutBoxDemo/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-Cookbook-Examples-AboutBoxDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-Cookbook-Examples-AboutBoxDemo.iml" group="AboutBoxDemo" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
