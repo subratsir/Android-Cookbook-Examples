@@ -2,4 +2,6 @@
     <string name="app_name">AboutBoxDemo</string>
 	<string name="about">This is our App, please see
     http://www.example.com. Email support at support@example.com.</string>
+    <string name="positiveButton">OK</string>
+    <string name="aboutBtn">About</string>
 </resources>
