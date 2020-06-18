@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ActionBarCompat.iml" filepath="$PROJECT_DIR$/ActionBarCompat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ActionBarCompat.iml" filepath="$PROJECT_DIR$/.idea/modules/ActionBarCompat.iml" group="ActionBarCompat" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ActionBarCompat/app" />
     </modules>
   </component>
 </project>
