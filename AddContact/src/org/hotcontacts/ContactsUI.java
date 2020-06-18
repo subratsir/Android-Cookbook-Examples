@@ -42,7 +42,7 @@ public class ContactsUI extends Activity {
 
 		// Use new-style batch operations: Build List of ops then call applyBatch
 		try {
-			ArrayList<ContentProviderOperation> ops = new ArrayList<ContentProviderOperation>();
+			ArrayList<ContentProviderOperation> ops = new ArrayList<>();
 			AuthenticatorDescription[] types = accountManager.getAuthenticatorTypes();
 			ops.add(ContentProviderOperation.newInsert(
 					ContactsContract.RawContacts.CONTENT_URI).withValue(
