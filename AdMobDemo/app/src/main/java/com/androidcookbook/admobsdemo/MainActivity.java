@@ -16,7 +16,6 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
     private static final String TOAST_TEXT = "Test ads are being shown. "
             + "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
-    private boolean admobTestMode = false;  // true if testing, false if production
     private static final int START_LEVEL = 1;
     private int mLevel;
     private Button mNextLevelButton;
@@ -29,7 +28,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         // Create the next level button, which tries to show an interstitial when clicked.
-        mNextLevelButton = ((Button) findViewById(R.id.next_level_button));
+        mNextLevelButton = findViewById(R.id.next_level_button);
         mNextLevelButton.setEnabled(false);
         mNextLevelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,14 +38,16 @@ public class MainActivity extends Activity {
         });
 
         // Create the text view to show the level number.
-        mLevelTextView = (TextView) findViewById(R.id.level);
+        mLevelTextView = findViewById(R.id.level);
         mLevel = START_LEVEL;
 
         // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
         mInterstitialAd = newInterstitialAd();
         loadInterstitial();
 
-        if (admobTestMode) {
+        // true if testing, false if production
+        boolean admobTestMode = false;
+        if ( admobTestMode ) {
             // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
             Toast.makeText(this, TOAST_TEXT, Toast.LENGTH_LONG).show();
         }
@@ -117,7 +118,8 @@ public class MainActivity extends Activity {
 
     private void goToNextLevel() {
         // Show the next level and reload the ad to prepare for the level after.
-        mLevelTextView.setText("Level " + (++mLevel));
+        String mLevelTxtString = "Level " + (++mLevel);
+        mLevelTextView.setText(mLevelTxtString);
         mInterstitialAd = newInterstitialAd();
         loadInterstitial();
     }
