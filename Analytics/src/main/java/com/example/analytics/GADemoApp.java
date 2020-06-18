@@ -5,11 +5,6 @@ import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 
 public class GADemoApp extends Application {
-	/* 
-	 * Define web property ID obtained after creating a profile for the app. If
-	 * using the Gradle plugin, this should be available as R.xml.global_tracker.
-	 */
-	private String webId = "UA-NNNNNNNN-Y";
 
 	/* Analytics tracker instance */
 	Tracker tracker;
@@ -23,7 +18,12 @@ public class GADemoApp extends Application {
 			GoogleAnalytics instance = GoogleAnalytics.getInstance(this);
 
 			// Start tracking the app with your web property ID
-			tracker = instance.newTracker(webId);
+			/*
+			 * Define web property ID obtained after creating a profile for the app. If
+			 * using the Gradle plugin, this should be available as R.xml.global_tracker.
+			 */
+			String webId = "UA-NNNNNNNN-Y";
+			tracker = instance.newTracker( webId );
 
 			// Any app-specific Application setup code goes here...
 		}

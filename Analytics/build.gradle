@@ -10,21 +10,25 @@ apply plugin: 'com.android.application'
 buildscript {
 	repositories {
 		jcenter()
+		maven {
+			url 'https://maven.google.com/'
+			name 'Google'
+		}
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:2.3.0'
-		classpath 'com.google.gms:google-services:3.0.0'
+		classpath 'com.android.tools.build:gradle:4.0.0'
+		classpath 'com.google.gms:google-services:4.3.3'
 	}
 }
 
 android {
-	compileSdkVersion 25
-	buildToolsVersion "25"
+	compileSdkVersion 29
+	buildToolsVersion "29.0.3"
 
 	defaultConfig {
 		// applicationId "YOUR.PACKAGE.NAME.HERE"
 		minSdkVersion 15
-		targetSdkVersion 25
+		targetSdkVersion 29
 		versionCode 1
 		versionName "1.0"
 	}
@@ -42,12 +46,16 @@ android {
 
 repositories {
 	jcenter()
+	maven {
+		url 'https://maven.google.com/'
+		name 'Google'
+	}
 }
 
 dependencies {
-	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'com.android.support:appcompat-v7:+'
-	compile 'com.google.android.gms:play-services-analytics:10.0.1'
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'androidx.appcompat:appcompat:1.1.0'
+	implementation 'com.google.android.gms:play-services-analytics:17.0.0'
 }
 
 
