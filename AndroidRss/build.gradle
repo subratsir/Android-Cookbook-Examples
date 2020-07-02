@@ -8,21 +8,25 @@ apply plugin: 'com.android.application'
 
 buildscript {
 	repositories {
-		mavenCentral()
+		jcenter()
+		maven {
+			url 'https://maven.google.com/'
+			name 'Google'
+		}
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:+'
+		classpath 'com.android.tools.build:gradle:4.0.0'
 	}
 }
 
 android {
-	compileSdkVersion 24
-	buildToolsVersion "24"
+	compileSdkVersion 29
+	buildToolsVersion "29.0.3"
 
 	defaultConfig {
 		// applicationId "YOUR.PACKAGE.NAME.HERE"
-		minSdkVersion 11
-		targetSdkVersion 23
+		minSdkVersion 14
+		targetSdkVersion 29
 		versionCode 1
 		versionName "1.0"
 	}
@@ -42,5 +46,13 @@ android {
 
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'com.android.support:appcompat-v7:+'
+	compile 'com.android.support:appcompat-v7:28.0.0'
+}
+
+repositories {
+	jcenter()
+	maven {
+		url 'https://maven.google.com/'
+		name 'Google'
+	}
 }
