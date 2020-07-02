@@ -22,12 +22,12 @@ public class AndroidApplication extends Application {
     }
     protected void initializeInstance() {
         // do all your initialization here
-        sessionHandler = new SessionHandler(
-                this.getSharedPreferences( "PREFS_PRIVATE", Context.MODE_PRIVATE ) );
+        sessionHandler = new SessionHandler (
+                this.getSharedPreferences ( "PREFS_PRIVATE", Context.MODE_PRIVATE ) );
     }
 
-    /** This is a stand-in for some applicatin-specific session handler. */
-    class SessionHandler {
+    /** This is a stand-in for some application-specific session handler. */
+    static class SessionHandler {
         SharedPreferences sp;
         SessionHandler(SharedPreferences sp) {
             this.sp = sp;
