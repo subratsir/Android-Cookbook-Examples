@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-Cookbook-Examples-AppSingleton.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-Cookbook-Examples-AppSingleton.iml" group="AppSingleton" />
       <module fileurl="file://$PROJECT_DIR$/AppSingleton.iml" filepath="$PROJECT_DIR$/AppSingleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppSingleton-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppSingleton-app.iml" group="AppSingleton/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
